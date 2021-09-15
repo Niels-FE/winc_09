@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact pagina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="border-1 border-green mb-2">
+        <nav>
+            <ul class="arial list-none flex justify-center">
+                <li class="p-1">
+                    <a class="bold no-deco txt-black" href="/over-ons" hreflang="nl" title="over ons" target="_blank"
+                        rel="nofollow">
+                        Over ons</a>
+                </li>
+                <li class="p-1">
+                    <a class="bold no-deco txt-black" href="/menu" hreflang="nl" title="Menu" target="_blank"
+                        rel="nofollow">
+                        Menu</a>
+                </li>
+                <li class="p-1">
+                    <a class="bold no-deco txt-black" href="/contact" hreflang="nl" title="Contact" target="_blank"
+                        rel="nofollow">
+                        Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="border-1 border-green mb-2">
+        <h1 class="">Contact</h1>
+        <p>Welkom op de contactpagina. De makkelijkste manier om in contact te komen is door via dit formulier een
+            bericht te verzenden. We zullen snel contact met je opnemen.</p>
+        <form name="contact" method="POST" data-netlify="true">
+            <div class="flex flex-col mb-1">
+                <label for="name">
+                    Naam
+                </label>
+                <input type="text" placeholder="bijv. Mark" id="name" name="name" />
+            </div>
+            <div class="flex flex-col mb-1">
+                <label for="email">
+                    Email
+                </label>
+                <input type="email" placeholder="voorbeeld@voorbeeld.nl" id="email" name="email" required />
+            </div>
+            <div class="flex flex-col mb-1">
+                <label for="tel">
+                    Telefoon
+                </label>
+                <input type="phone" placeholder="" name="tel" id="tel" required />
+            </div>
+            <div class="flex flex-col mb-1">
+                <label for="age">
+                    Leeftijd
+                </label>
+                <input type="date" placeholder="" name="age" id="age" required />
+            </div>
+            <div class="flex  mb-1">
+                <input type="radio" placeholder="" name="gen" id="man" required />
+                <label for="man">
+                    Man
+                </label>
+                <input type="radio" placeholder="" name="gen" id="vrouw" required />
+                <label for="vrouw">
+                    Vrouw
+                </label>
+            </div>
+            <div class="mb-1">
+                <div class="flex">
+                    <input type="checkbox" id="frans" />
+                    <label for="frans">
+                        frans
+                    </label>
+                </div>
+                <div class="flex">
+                    <input type="checkbox" id="italiaans" />
+                    <label for="italiaans">
+                        Italiaans
+                    </label>
+                </div>
+                <div class="flex">
+                    <input type="checkbox" id="spaans" />
+                    <label for="spaans">
+                        Spaans
+                    </label>
+                </div>
+                <div class="flex">
+                    <input type="checkbox" id="arabisch" />
+                    <label for="arabisch">
+                        Arabisch
+                    </label>
+                </div>
+            </div>
+            <div class="flex flex-col">
+                <label for="color">
+                    Kleur van schort
+                </label>
+                <input type="color" id="color" name="color" />
+            </div>
+
+            <div class="flex flex-col mb-1">
+                <label for="textfield">
+                    biografie
+                </label>
+                <textarea rows="5" cols="10" id="textfield">
+
+                </textarea>
+            </div>
+            <div class="flex flex-col mb-1">
+                <label for="upload">
+                    Upload je laatste recept
+                </label>
+                <input type="file" id="upload" name="file" />
+            </div>
+            <div class="flex flex-col mb-1">
+                <label for="web">
+                    Link naar website
+                </label>
+                <input type="text" id="web" />
+            </div>
+            <div class="flex justify-around mb-1">
+                <input type="reset" />
+                <input type="submit" />
+            </div>
+        </form>
+    </main>
+</body>
+<footer class="">
+    <nav class="mb-2 justify-around flex">
+        <a class="bg-red text-white radius-5 p-1 no-deco" href="about.html" hreflang="nl" title="Over Niels">Over
+            Niels</a>
+        <a class="bg-red text-white radius-5 p-1 no-deco" href="index.html" hreflang="nl" title="Home">Home</a>
+    </nav>
+</footer>
+
+</html>
